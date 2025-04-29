@@ -31,6 +31,15 @@ body {
 
 }
 
+.hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
 .header-menu {
     flex: 1;
     margin-left: 30px;
@@ -301,11 +310,91 @@ body {
 
 
 @media (max-width: 768px) {
-    .section-one-two {
-        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
-        grid-template-rows: auto auto auto auto;
+    .header {
+        flex-wrap: wrap;
     }
 
-    
-}
+    .hamburger {
+        display: block;
+    }
 
+    .header-menu {
+        width: 100%;
+        display: none;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .header-menu-nav-ul {
+        flex-direction: column;
+        gap: 10px;
+        background-color: var(--primary-blue);
+        padding: 20px 0;
+        align-items: center;
+    }
+
+    .header-menu-nav-ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-iniciar-button {
+       display: none;
+    }
+
+    .header-facebook {
+        margin-top: 10px;
+    }
+
+    .section-one-two {
+        grid-template-columns: 1fr; /* Solo una columna */
+        grid-template-rows: auto auto auto auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .section-one-two-bandera {
+        grid-row: 1;
+        justify-content: center;
+    }
+
+    .section-one-two-parrafo-text {
+        grid-row: 2;
+        text-align: center;
+    }
+
+    .section-one-two-video {
+        grid-row: 3;
+        margin-top: 0;
+    }
+
+    .section-one-two-info {
+        grid-row: 4;
+        margin-top: 20px;
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-one-two-info-buton {
+        width: 80%;
+        text-align: center;
+    }
+
+    .section-two-content {
+        grid-template-columns: 1fr; /* Una sola tarjeta por fila */
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .section-two-title {
+        font-size: 1.5rem;
+    }
+}
