@@ -1,15 +1,23 @@
-:root {
+/* :root {
     --primary-blue: #0072CE;
     --accent-yellow: #FFD100;
     --text-light: #FFFFFF;
     --text-dark: #333333;
     --background-light: #D6EFFF;
-}
+} */
 
+:root {
+    --primary-blue: #0118D8;       /* Azul oscuro - Usar para headers, botones principales */
+    --secondary-blue: #1B56FD;     /* Azul claro - Usar para hover, íconos, enlaces activos */
+    --accent-beige: #E9DFC3;       /* Beige claro - Fondo general, secciones intermedias */
+    --background-light: #FFF8F8;   /* Blanco cálido - Tarjetas, inputs, fondos suaves */
+    --text-dark: #0118D8;          /* Azul oscuro también puede ser usado para textos importantes */
+    --text-light: #FFFFFF;         /* Blanco - Para textos sobre fondos oscuros */
+}
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--background-light);
+    background-color: var(--accent-beige);
     color: var(--text-dark);
     margin: 0;
     padding: 0;
@@ -55,7 +63,7 @@ body {
 }
 
 .header-menu-nav-ul li {
-    background-color: var(--accent-yellow);
+    background-color: var(--accent-beige);
     padding: 8px 16px;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -71,11 +79,11 @@ body {
 }
 
 .header-menu-nav-ul li:hover {
-    background-color: var(--primary-blue);
+    background-color: var(--text-light);
 }
 .header-menu-nav-ul a:hover{
     font-size: 18px;
-    color: var(--text-light);
+    color: var(--text-darkS);
 }
 
 /* Dropdown */
@@ -88,7 +96,7 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: var(--accent-yellow);
+    background-color: var(--secondary-blueS);
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     list-style: none;
@@ -104,7 +112,7 @@ body {
 }
 
 .dropdown-menu li a:hover {
-    background-color: var(--primary-blue);
+    background-color: var(--text-dark);
     color:white!important;
 }
 
@@ -115,7 +123,7 @@ body {
 
 .header-iniciar-button a{
     text-decoration: none;
-    background-color: var(--accent-yellow);
+    background-color: var(--background-light);
     color: var(--text-dark);
     font-size: 16px;
     font-weight: bold;
@@ -132,9 +140,9 @@ body {
     color: var(--text-light);
 }
 
-/*section one test*/
+/*-----------------section one test-------------*/
 .section-one-two {
-    background-color: var(--text-light);
+    background-color: var(--secondary-blue);
     color: var(--text-dark);
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -142,6 +150,7 @@ body {
    padding: 20px;
    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
    border-radius: 10px;
+   margin-top: 20px;
 }
 
 .section-one-two-bandera {
@@ -158,7 +167,7 @@ body {
 }
 
 .section-one-two-parrafo-text {
-    background-color: var(--accent-yellow);
+    background-color: var(--text-light);
     color: var(--text-dark);
     font-size: 1.2rem;
     padding: 10px;
@@ -191,7 +200,7 @@ body {
 
 }
 .section-one-two-info a{
-    background-color: var(--accent-yellow);
+    background-color: var(--accent-beige);
     color: var(--text-dark);
     border-radius:50px;
     text-decoration: none;
@@ -211,11 +220,12 @@ body {
 
 /* Section two*/
 .section-two {
-    background-color: var(--primary-blue); 
+    background-color: var(--secondary-blue); 
     color: var(--text-light); 
     text-align: center;
     padding: 40px 20px;
     border-radius: 10px; /* Bordes suaves */
+    margin-top: 20px ;
 }
 
 
@@ -223,7 +233,7 @@ body {
 .section-two-title {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #333; /* Color del título */
+    color: var(--text-light); /* Color del título */
 }
 
 .section-two-content {
@@ -233,8 +243,7 @@ body {
 }
 
 .card {
-    background-color: var(--accent-yellow); /* Amarillo llamativo */
-    color: var(--text-dark); /* Texto oscuro */
+    background-color: var(--primary-blue); /* Amarillo llamativo */
     padding: 20px;
     border: none; /* Sin bordes */
     border-radius: 10px; /* Bordes redondeados */
@@ -247,19 +256,19 @@ body {
 .card h2 {
     font-size: 1.5rem;
     margin-bottom: 15px;
-    color: #0078d7; /* Color distintivo para los títulos */
+    color:var(--text-light); /* Color distintivo para los títulos */
 }
 
 .card p {
     font-size: 1rem;
     line-height: 1.5;
-    color: #666; /* Texto más tenue */
+    color: var(--accent-beige); /* Texto más tenue */
 }
 
-/*Sectio-thre*/
+/*Section-three*/
 /*Fondo*/
 .section-three {
-    background-color: var(--primary-blue);
+    background-color: var(--secondary-blue);
     text-align: center;
     padding: 40px 20px;
     border-radius: 10px; /* Bordes suaves */
@@ -275,8 +284,8 @@ body {
 }
 
 .section-three-maestros-card{
-    background-color: var(--accent-yellow); /* Amarillo llamativo */
-    color: var(--text-dark); /* Texto oscuro */
+    background-color: var(--primary-blue); /* Amarillo llamativo */
+    color: var(--text-light); /* Texto oscuro */
     padding: 20px;
     border: none; /* Sin bordes */
     border-radius: 10px; /* Bordes redondeados */
@@ -287,7 +296,7 @@ body {
 
 .section-three-maestros-info{
     font-size: 1.5rem;
-    color: #0078d7; /* Color distintivo para los títulos */ 
+    color: var(--text-light); /* Color distintivo para los títulos */ 
 }
 .section-three-maestros-info h3, h4{
     margin: 0px;
@@ -305,7 +314,7 @@ body {
     margin: 0;
     font-size: 1rem;
     line-height: 1.5;
-    color: #666; /* Texto más tenue */
+    color: var(--accent-beige); /* Texto más tenue */
 }
 
 
