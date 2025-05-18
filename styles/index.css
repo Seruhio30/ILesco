@@ -409,6 +409,8 @@ body {
    background-color: var(--primary-blue);
   color: var(--text-light);
   padding: 30px 20px;
+  margin-top: 20px;
+
   
 }
 
@@ -417,7 +419,6 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
- 
   text-align: left;
 }
 
@@ -426,6 +427,7 @@ body {
   color: var(--text-light);
   font-weight: 600;
   text-decoration: none;
+  
   margin: 5px 0;
 }
 
@@ -572,24 +574,26 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
+    
+    }
 
-  .footer-redes {
-    order: 1;
-  }
+   .footer-redes {
+     order: 1;
+     margin-top: 50px;
+   }
 
-  .footer-contacto {
-    order: 2;
-  }
+   .footer-contacto {
+     order: 2;
+   }
 
-  .footer-copy {
-    order: 3;
-    margin-top: 20px;
-  }
+   .footer-copy {
+     order: 3;
+     margin-top: 20px;
+   }
 
-  .footer-redes-svg {
-    justify-content: center;
-  }
+   .footer-redes-svg {
+     justify-content: center;
+   }
  
 }
 
