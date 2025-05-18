@@ -1,16 +1,10 @@
-/* :root {
-    --primary-blue: #0072CE;
-    --accent-yellow: #FFD100;
-    --text-light: #FFFFFF;
-    --text-dark: #333333;
-    --background-light: #D6EFFF;
-} */
-
 /*
 root linea 13
 body linea 23
 header linea 32 a la 146
 section ONE 151 a la 224
+section two  220 a la 263
+section three 
 */
 
 :root {
@@ -225,7 +219,7 @@ body {
 
 
 
-/* Section two*/
+/* --------------Section two--------------------------*/
 .section-two {
     background-color: var(--secondary-blue); 
     color: var(--text-light); 
@@ -271,9 +265,7 @@ body {
 }
 
 
-
-
-/*Section-three*/
+/*--------------------------Section-three-------------------------------*/
 /*Fondo*/
 .section-three {
     background-color: var(--secondary-blue);
@@ -298,12 +290,14 @@ body {
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
     text-align: center;
+
     
 }
 
 .section-three-maestros-info{
     font-size: 1.5rem;
     color: var(--text-dark); /* Color distintivo para los títulos */ 
+
 }
 .section-three-maestros-info h3, h4{
     margin: 0px;
@@ -322,6 +316,7 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     color: var(--primary-blue); /* Texto más tenue */
+    margin-top: 30px;
 }
 
    /*section cursos*/
