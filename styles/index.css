@@ -82,7 +82,7 @@ body {
 }
 .header-menu-nav-ul a:hover{
     font-size: 18px;
-    color: var(--text-darkS);
+    color: var(--text-dark);
 }
 
 
@@ -123,7 +123,7 @@ body {
 
 .header-iniciar-button a{
     text-decoration: none;
-    background-color: var(--background-light);
+   background-color: var(--accent-beige);
     color: var(--text-dark);
     font-size: 16px;
     font-weight: bold;
@@ -136,8 +136,9 @@ body {
 }
 
 .header-iniciar-button a:hover {
-    background-color: var(--primary-blue);
-    color: var(--text-light);
+   font-size: 18px;
+   background-color: var(--background-light);
+   color: var(--text-dark);
 }
 
 
@@ -213,8 +214,10 @@ body {
 }
 
 .section-one-info a:hover{
-    background-color: var(--primary-blue);
-    color: var(--text-light);
+   font-size: 26px;
+   background-color: var(--background-light);
+   color: var(--text-dark);;
+   
 }
 
 
@@ -414,7 +417,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  text-align: left;
+  justify-content: center;
 }
 
 .footer-contacto a {
@@ -529,6 +532,12 @@ body {
   .section-one-video {
       grid-row: 3;
       margin-top: 0;
+      
+  }
+
+  .section-one-video iframe {
+    width: 100%; /* Haz el video más grande */
+    height: auto; /* Ajusta el tamaño del video */
   }
 
   .section-one-info {
@@ -537,11 +546,18 @@ body {
       width: 100%;
       display: flex;
       justify-content: center;
+    
   }
 
   .section-one-info-buton {
       width: 80%;
       text-align: center;
+      
+  }
+  .section-one-info a{
+    border-radius: 0%;
+    padding: 5px;
+    font-size: 20px;
   }
     /* Section two / nosotros */
   .section-two-content {
