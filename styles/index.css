@@ -575,6 +575,10 @@ body {
         font-size: 1.5rem;
     }
 
+    .section-three-maestros-video iframe{
+    margin-top: 30px;
+    }
+
     .curso-info {
       padding: 10px;
     }
@@ -583,6 +587,8 @@ body {
         border-radius: 0 0 12px 12px;
         border-left: none;
         border-top: 2px solid var(--accent-beige);
+        width: 100%;
+        height: auto;
     }
 
      .footer-content {
