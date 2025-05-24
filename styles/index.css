@@ -575,6 +575,10 @@ body {
         font-size: 1.5rem;
     }
 
+    .curso-info {
+      padding: 10px;
+    }
+
     .curso-media img {
         border-radius: 0 0 12px 12px;
         border-left: none;
