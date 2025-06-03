@@ -279,48 +279,67 @@ body {
 }
 
 /*contenedor de las cards*/
-.section-three-maestros{
+.section-three-maestros {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Tarjetas responsivas */
-    gap: 20px; /* Espaciado entre tarjetas */
-  
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
-.section-three-maestros-card{
-    background-color: rgb(229, 224, 224); /* Amarillo llamativo */
+.section-three-maestros-card {
+    background-color: rgb(229, 224, 224);
     padding: 20px;
-    border: none; /* Sin bordes */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-three-maestros-info {
     text-align: center;
-
-    
+    margin-bottom: 20px;
 }
 
-.section-three-maestros-info{
+.section-three-maestros-info h3,
+.section-three-maestros-info h4 {
     font-size: 1.5rem;
-    color: var(--text-dark); /* Color distintivo para los títulos */ 
-    margin-top: 20px;
-
-}
-.section-three-maestros-info h3, h4{
-    margin: 0px;
-    padding: opx;
+    margin-bottom: 15px;
+    color:var(--text-dark);
 }
 
-.section-three-maestros-video iframe{
-    max-width: 300px;
-    margin-top: 20px;
+.section-three-maestros-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
+/* Texto */
+.section-three-maestros-descripcion {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+}
 
 .section-three-maestros-descripcion p {
-    padding: 0;
-    margin: 0;
     font-size: 1rem;
     line-height: 1.5;
-    color: var(--primary-blue); /* Texto más tenue */
-    margin-top: 30px;
+    color: var(--primary-blue);
+    margin: 0;
+}
+
+/* Video */
+.section-three-maestros-video {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-three-maestros-video iframe {
+    width: 100%;
+    height: 500px; /* 🔑 Ajusta esto según lo que Facebook necesita */
+    border-radius: 10px;
+    border: none;
 }
 
    /*section cursos*/
@@ -576,8 +595,18 @@ body {
         font-size: 1.5rem;
     }
 
-    .section-three-maestros-video iframe{
-    margin-top: 30px;
+    .section-three-maestros-content {
+        flex-direction: column;
+    }
+
+    .section-three-maestros-descripcion,
+    .section-three-maestros-video {
+        width: 100%;
+    }
+
+    .section-three-maestros-video iframe {
+        height: auto;
+        aspect-ratio: 16 / 9;
     }
 
     .curso-info {
