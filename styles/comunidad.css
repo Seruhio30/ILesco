@@ -72,7 +72,7 @@ body {
     background-color: var(--text-light);
 }
 .header-menu-nav-ul a:hover{
-    font-size: 18px;
+    transform: scale(1.05);
     color: var(--text-dark);
 }
 
@@ -206,11 +206,12 @@ body {
 }
 
 .dev-credit a {
-  color: var(--secondary-blue);
-  text-decoration: none;
+  color: var(--accent-beige);
+  text-decoration: underline;
 }
 .dev-credit a:hover {
-  text-decoration: underline;
+  background-color: var(--background-light);
+  color: black;
 }
 
 @media (max-width: 768px) {

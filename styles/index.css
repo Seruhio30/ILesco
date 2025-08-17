@@ -493,12 +493,12 @@ body {
 }
 
 .dev-credit a {
-    color: var(--secondary-blue);
-    text-decoration: none;
+  color: var(--accent-beige);
+  text-decoration: underline;
 }
-
 .dev-credit a:hover {
-    text-decoration: underline;
+  background-color: var(--background-light);
+  color: black;
 }
 
 
