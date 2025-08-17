@@ -1,11 +1,5 @@
-/*
-root linea 13
-body linea 23
-header linea 32 a la 146
-section ONE 151 a la 224
-section two  220 a la 263
-section three 
-*/
+
+
 
 :root {
     --primary-blue: #0118D8;       /* Azul oscuro - Usar para headers, botones principales */
@@ -79,12 +73,9 @@ body {
 
 .header-menu-nav-ul li:hover {
     background-color: var(--text-light);
-}
-.header-menu-nav-ul a:hover{
-    font-size: 18px;
-    color: var(--text-dark);
-}
+    transform: scale(1.05);
 
+}
 
 /* Dropdown */
 .dropdown {
@@ -136,7 +127,7 @@ body {
 }
 
 .header-iniciar-button a:hover {
-   font-size: 18px;
+   transform: scale(1.05);
    background-color: var(--background-light);
    color: var(--text-dark);
 }
@@ -314,10 +305,12 @@ body {
 
 /* Texto */
 .section-three-maestros-descripcion {
-    flex: 1;
+     flex: 1;
     min-width: 250px;
     display: flex;
-    align-items: center;
+    flex-direction: column; /* ← Asegura que los <p> se apilen verticalmente */
+    align-items: flex-start;
+    margin-top: 2.5rem;
 }
 
 .section-three-maestros-descripcion p {
@@ -325,6 +318,8 @@ body {
     line-height: 1.5;
     color: var(--primary-blue);
     margin: 0;
+     margin-bottom: 1rem;
+
 }
 
 /* Video */
@@ -335,12 +330,7 @@ body {
     justify-content: center;
 }
 
-.section-three-maestros-video iframe {
-    width: 100%;
-    height: 500px; /* 🔑 Ajusta esto según lo que Facebook necesita */
-    border-radius: 10px;
-    border: none;
-}
+
 
    /*section cursos*/
 /* Estilos del layout horizontal */
@@ -604,10 +594,7 @@ body {
         width: 100%;
     }
 
-    .section-three-maestros-video iframe {
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
+    
 
     .curso-info {
       padding: 10px;
