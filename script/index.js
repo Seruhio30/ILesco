@@ -1,8 +1,12 @@
-const hamburger = document.getElementById('hamburger');
-const menu = document.getElementById('header-menu');
-
-hamburger.addEventListener('click', () => {
-  menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
-});
 
 
+
+
+  const navButtom = document.querySelector('#hamburger');
+  const navLinks = document.querySelector('#header-menu');
+
+  navButtom.addEventListener('click', () => {
+
+      navButtom.classList.toggle('show')
+      navLinks.classList.toggle('show')
+  });

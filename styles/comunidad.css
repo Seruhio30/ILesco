@@ -39,12 +39,23 @@ body {
     color: var(--text-light);
     cursor: pointer;
 }
+.hamburger::before {
+  content: "\2630";
+}
+
+.hamburger.show::before {
+  content: "\00D7";
+}
 
 .header-menu {
     flex: 1;
     margin-left: 30px;
+    
 }
 
+.header-menu.show{
+    display: flex;
+}
 .header-menu-nav-ul {
     display: flex;
     justify-content: center;
